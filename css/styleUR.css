@@ -1,0 +1,401 @@
+body {
+    background-color: #dddddd;
+    margin: 0em;
+    padding: 0em;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0em;
+    margin-top: 2em;
+    font-size: 2em;
+}
+
+.blue{
+    display: flex;
+    justify-content: center;
+    color: #ff6347;
+}
+
+.logo b{
+    color: #ff6347;
+}
+
+.home a{
+    text-decoration: none;
+}
+.form_btnHome{
+    display: flex;
+    justify-content: center;
+}
+
+.form_btnHome a{
+    display: flex;
+    text-decoration: none;
+    color: #ff6347;
+    margin-left: 25em;
+}
+
+.background{
+    display: flex;
+    justify-content: center;
+    margin-right: 3.5em;
+}
+
+.cuadrado {
+    align-items: center;
+    background-color: #dddddd;
+    border: 10px solid tomato;
+    border-radius: 20px;
+    height: 24em;
+    width: 31em;
+    position: fixed;
+    margin-top: 1em;
+}
+
+.userRegister{
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.form{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+    gap: 1em;
+}
+
+.form_grupoInput{
+    position: relative;
+}
+
+#user{
+    margin-bottom: .5em;
+    font-size: .8em;
+    color: #ff6347;
+}
+
+#user1{
+    border-radius: .3em;
+    background-color: transparent;
+    border: 0.1em solid #000000;
+    margin-bottom: .2em;
+    padding: .3em;
+}
+
+#pass1{
+    border-radius: .3em;
+    background-color: transparent;
+    border: 0.1em solid #000000;
+    margin-bottom: .2em;
+    padding: .3em;
+}
+
+#pass2{
+    border-radius: .3em;
+    background-color: transparent;
+    border: 0.1em solid #000000;
+    margin-bottom: .2em;
+    padding: .3em;
+}
+
+#password{
+    margin-bottom: .5em;
+    font-size: .8em;
+    color: #ff6347;
+}
+
+#password2{
+    margin-bottom: .5em;
+    font-size: .8em;
+    color: #ff6347;
+}
+
+#correo{
+    margin-bottom: .5em;
+    font-size: .8em;
+    color: #ff6347;
+}
+
+#email1{
+    border-radius: .3em;
+    background-color: transparent;
+    border: 0.1em solid #000000;
+    margin-bottom: .2em;
+    padding: .3em;
+}
+
+.form_inputError{
+    color: #ff6347;
+    font-size: 0.5em;
+    display: none;
+}
+.form_inputError-activo{
+    display: block;
+}
+
+.form_validationState{
+    position: absolute;
+    font-size: .9em;
+    left: 160px;
+    top: 5px;
+    z-index: 100;
+    opacity: 0;
+}
+
+.form_checkbox, .form_mensaje, .form_btnRegistrarme, .registrado1{
+    grid-column: span 2;
+}
+
+.form_label{
+    font-size: .8em;
+    color: #000000;
+}
+
+.fa-circle-exclamation{
+    margin-right: .5em;
+    color: #ffffff;
+    font-size: 1.5em;
+}
+
+.form_mensaje{
+    font-size: .8em;
+    color: #ffffff;
+    background-color: #c2373e;
+    width: 31em;
+    margin-top: 1em;
+    padding-top: .1em;
+    padding-left: 1em;
+    display: none;
+}
+
+.form_mensaje-activo{
+    display: block;
+}
+
+.form_btnRegistrarme{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formbtn_registrarme{
+    font-size: 1em;
+    color: #000000;
+    border-radius: .3em;
+    border: 0.1em solid #ff6347;
+    padding: .3em;
+    padding-left: .5em;
+    padding-right: .5em;
+    margin-top: 1em;
+    background-color: transparent;
+}
+
+.formbtn_registrarme:hover{
+    background-color: #dddddd;
+    filter: drop-shadow(0.2em 0.2em 0.2em #ff6347);
+    cursor: pointer;
+}
+
+.registrado1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form_exito{
+    color: #22b12e;
+    margin-top: .5em;
+    font-size: .7em;
+    display: none;
+}
+
+.form_exito-activo{
+    display: block;
+}
+
+
+.form_grupo1Correcto .form_validationState{
+    color: #0cbb1b;
+    opacity: 1;
+}
+
+.form_grupo1Incorrecto .form_validationState{
+    color: #df2d2d;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1280px){
+    .form_validationState{
+        position: absolute;
+        font-size: .9em;
+        left: 158px;
+        top: 6px;
+        z-index: 100;
+        opacity: 0;
+    }
+    .cuadrado {
+        align-items: center;
+        background-color: #dddddd;
+        filter: drop-shadow(0.2em 0.2em 0.6em #000000);
+        height: 24em;
+        width: 31em;
+        position: fixed;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .logo{
+        display: flex;
+        justify-content: center;
+        margin-bottom: 0em;
+        margin-top: 2em;
+        font-size: 4em;
+    }
+    
+    .blue{
+        display: flex;
+        justify-content: center;
+        color: #ff6347;
+    }
+    
+    .logo b{
+        color: #ff6347;
+    }
+
+    .form_btnHome{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .form_btnHome a{
+        display: flex;
+        text-decoration: none;
+        color: #ff6347;
+        margin-left: 22em;
+        font-size: 1.5em;
+    }
+
+    .background{
+        display: flex;
+        justify-content: center;
+        margin-right: 3.5em;
+    }
+    
+    .cuadrado {
+        align-items: center;
+        background-color: #dddddd;
+        filter: drop-shadow(0.2em 0.2em 0.6em #000000);
+        height: 66em;
+        width: 40em;
+        position: fixed;
+        margin-top: 1em;
+    }
+
+    .userRegister{
+        display: flex;
+        justify-content: center;
+        margin-top: 3em;
+    }
+    
+    .form{
+        display: block;
+        grid-template-columns: 1fr;
+        position: relative;
+        align-items: center;
+    }
+
+    .form_grupoInput{
+        padding-top: .5em;
+        margin-bottom: 1em;
+    }
+    #user1, #pass1, #pass2, #email1{
+        font-size: 1.5em;
+    }
+    #user, #password, #password2, #correo{
+        font-size: 1.5em;
+    }
+    #form_Grupo5{
+        padding-top: 1em;
+    }
+    .form_label{
+        font-size: 1.5em;
+    }
+    .form_checkbox{
+        width: 2em;
+        height: 2em;
+        margin-right: 1em;
+    }
+    .fa-circle-exclamation{
+        margin-right: .5em;
+        color: #ffffff;
+        font-size: 1.5em;
+    }
+    
+    .form_mensaje{
+        font-size: 1.5em;
+        color: #ffffff;
+        background-color: #c2373e;
+        width: 15em;
+        margin-top: 1em;
+        padding-top: .1em;
+        padding-left: 2em;
+        padding-bottom: .6em;
+        display: none;
+    }
+    .form_mensaje-activo{
+        display: block;
+    }
+    .formbtn_registrarme{
+        font-family: 'Roboto Slab', serif;
+        font-size: 2.5em;
+        color: #000000;
+        border-radius: .3em;
+        border: .1em solid #ff6347;
+        padding: .3em;
+        padding-left: .5em;
+        padding-right: .5em;
+        margin-top: 1em;
+        background-color: transparent;
+    }
+    .formbtn_registrarme:hover{
+        background-color: #dddddd;
+        filter: drop-shadow(0.2em 0.2em 0.2em #000000);
+    }
+    .registrado1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .form_exito{
+        color: #22b12e;
+        margin-top: 2em;
+        font-size: 2em;
+        display: none;
+    }
+    .form_exito-activo{
+        display: block;
+    }
+    .form_validationState{
+        position: absolute;
+        font-size: 2em;
+        left: 270px;
+        top: 15px;
+        z-index: 100;
+        opacity: 0;
+    }
+    .form_inputError{
+        color: #ff6347;
+        font-size: 1em;
+        padding-bottom: 1em;
+        display: none;
+    }
+    .form_inputError-activo{
+        display: block;
+    }
+}
+    

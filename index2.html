@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styleUR.css">
+    <title>Insport</title>
+</head>
+<body>
+
+    <div class="logo"><span class="blue">IN</span><span class="yellow">sport</span><b>.</b></div>
+    
+    <div class="background">
+        <div class="cuadrado"></div>
+    </div>
+
+    <div class="userRegister">
+        <form action="" class="form" id="form">
+
+            <div class="form_grupo1" id="form_Grupo1">     
+                <label for="user" id="user">Usuario</label>
+                    <div class="form_grupoInput">
+                        <input type="text" id="user1" name="user1">
+                        <i class="form_validationState fa-solid fa-circle-xmark"></i>
+                    </div>
+                <p class="form_inputError">El usuario tiene que ser de 6 a 10 dígitos</p>
+            </div>
+
+
+            <div class="form_grupo1" id="form_Grupo2">     
+                <label for="password" id="password">Contraseña</label>
+                    <div class="form_grupoInput">
+                        <input type="password" id="pass1" name="pass1">
+                        <i class="form_validationState fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form_inputError">mínimo 6 caracteres, máximo 12 caracteres</p>
+            </div>
+
+            <div class="form_grupo1" id="form_Grupo3">     
+                <label for="password2" id="password2">Repetir Contraseña</label>
+                    <div class="form_grupoInput">
+                        <input type="password" id="pass2" name="pass2">
+                        <i class="form_validationState fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form_inputError">Ambas contraseñas deben coincidir</p>
+            </div>
+
+            <div class="form_grupo1" id="form_Grupo4">     
+                <label for="correo" id="correo">Correo Electrónico</label>
+                    <div class="form_grupoInput">
+                        <input type="email" id="email1" name="email1">
+                        <i class="form_validationState fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="form_inputError">Debe ser un correo válido</p>
+            </div>
+
+            <div class="form_grupo1" id="form_Grupo5">
+                <label for="terminos" class="form_label">
+                    <input class="form_checkbox" type="checkbox" name="terminos" id="terminos">
+                    Acepto los Términos y Condiciones
+                </label>
+            </div>
+
+            <div class="form_mensaje" id="form_mensaje">
+                <p><i class="fa-solid fa-circle-exclamation"></i>Por favor rellena el formulario correctamente</p>
+            </div>
+
+            <div class="form_btnRegistrarme">
+                <button type="submit" class="formbtn_registrarme">Registrarme</button>
+            </div>
+            <div class="home">
+                <a href="index.html"><p>Home</p></a>
+            </div>
+
+            <div class="registrado1">
+                <p class="form_exito" id="form_exito1">Registrado correctamente</p>
+            </div>
+
+        </form>
+        
+    </div>
+<script src="js/UserRegister.js" ></script>   
+<script src="https://kit.fontawesome.com/a758815169.js" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

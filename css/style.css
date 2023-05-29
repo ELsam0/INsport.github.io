@@ -97,6 +97,10 @@ header .logo{
     transform: translateY(-50%);
     /* box-shadow: 0 3px 6px; */
 }
+.section a{
+    color: inherit;
+    text-decoration: none;
+}
 .wrapper .left-right:active{
     transform: translateY(-50%) scale(0.85);
   }
@@ -113,7 +117,10 @@ header .logo{
     transition: transform 0.1s linear;
     margin: 24px 8px 0 0;
     font-size: 30px;
-    color: inherit;
+    color: tomato;
+}
+.section .button:active{
+    transform: translateY(-50%) scale(0.85);
 }
 .wrapper .carousel{
     display: grid;
@@ -173,18 +180,24 @@ header .logo{
     height: 350px;
 }
 .card .img img {
-    width: 100%;
-    height: 100%;
+    width: 100%; 
     object-fit: cover;
+    height: 320px;
 }
 .card h2{
     font-weight: 500;
-    font-size: 1.56rem;
-    margin: 5px 0 5px;
+    font-size: 1.4rem;
+    margin: 5px 0 5px 5px;
 }
-.card span{
+.card p{
     color: #6a6d78;
-    font-size: 1.31rem;
+    font-size: 1.31rem; 
+    margin: 20px 0 0 5px;
+}
+.card b{
+    display: flex;
+    margin: 40px 0 0 5px;
+    font-size: 18px;
 }
 /*-----------------------*/
 
@@ -208,39 +221,21 @@ header .logo{
     text-align: center;
     margin-top: 5px;
 }
-/* @media screen and (max-width: 1920px) {
-    .carousel .res{
-        height: 500px;
-    }
-    .carousel .desres{
-        height: 200px;
-    }
-} */
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1500px)  {
     .wrapper .carousel{
         grid-auto-columns: calc((100% / 3) - 11px);
     }
     .carousel .res{
-        height: 470px;
+        height: 500px;
     }
 } 
-@media screen and (max-width: 900px) {
-    .wrapper .carousel {
-      grid-auto-columns: calc((100% / 2) - 11px);
-    }
-}
-@media screen and (max-width: 600px) {
-    .wrapper .carousel {
-      grid-auto-columns: 100%;
-    }
-  }
-/* responsive header */
+
 @media screen and (max-width: 1320px){
     header{
         padding: 0 20px;
     }
     .conatiner .section{
-        margin: 27px 0 27px 0;
+        margin: 27px 0 0 0;
     }
     #left, #right{
         display: none;
@@ -249,6 +244,7 @@ header .logo{
         margin: 30px 25px;
     }
 }
+/* responsive header */
 @media screen and (max-width: 1100px){
     
     .hamburger{
@@ -283,7 +279,6 @@ header .logo{
         height: 120px;
     }
     .nav-bar ul{
-        /* display: block; */
         width: fit-content;
         margin: 40px auto 0 auto;
         text-align: center;
@@ -298,7 +293,18 @@ header .logo{
         
     }
 }
+@media screen and (max-width: 900px) {
+    .wrapper .carousel {
+      grid-auto-columns: calc((100% / 2) - 11px);
+    }
+}
+@media screen and (max-width: 600px) {
+
+}
 @media screen and (max-width: 600px){
+    .wrapper .carousel {
+        grid-auto-columns: 100%;
+      }
     header{
         padding: 0 10px;
     }
